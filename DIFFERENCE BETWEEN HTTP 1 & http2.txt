@@ -1,0 +1,35 @@
+                                                                	DIFFERENCE BETWEEN HTTP 1.1 AND HTTP 2
+
+    HTTP is Hyper Text Transfer Protocol used by World Wide Web developed by Tim Berners Lee and his team between 1989-1991.
+It has gone through various developments though maintaining its simplicity while shaping its flexibility.
+
+HTTP/1.1
+
+	The first standardized version of HTTP,HTTP/1.1 was published in early 1997.
+Features:
+
+*Connection could be reused which saves time,not necessary to open multiple times to display the embedded resources.
+*Pipelining was added
+*Chunked encoding were supported
+*Additional cache control mechanism were introduced.
+*Content negotiation,including language,encoding and type was introduced where client and sever could  agree on which content to exchange.
+
+HTTP/2
+	Over the years web pages became complex.More visual media content and user interactivity increased.In 2010,Google introduced  an experimental protocol SPDY 
+which increased responsiveness and laid a foundation for HTTP/2.In 2015,HTTP/2 was introduced to solve many problems that HTTP/1.1 did not anticipate.It was much
+ faster and more efficient.
+
+HTTP/2 differs from HTTP/1.1 in the following ways
+
+*It is a binary protocol which can't be read and created manually.
+*It allows for the implementation of  improved optimization techniques
+*It is a multiplexed protocol where several requests can be made through same connection
+*It compresses headers thus removes duplication and overhead of data transmitted
+
+	Officially standardized in May 2015, HTTP/2 was incredibly successful. High-traffic websites showed the most rapid adoption in an effort to save on data transfer
+ overhead and subsequent budgets.This rapid adoption was likely because HTTP/2 didn't require changes to websites and applications. To use it, only an up-to-date server 
+that communicated with a recent browser was necessary. Only a limited set of groups was needed to trigger adoption, and as legacy browser and server versions were renewed,
+ usage was naturally increased, without significant work for web developers.
+
+ 
+ 

@@ -1,0 +1,85 @@
+				OBJECTS AND ITS INTERNAL REPRESENTATION IN JAVASCRIPT
+
+	Objects is one of the Non primitive data types in Javascript.It is meant for reference type of data.An object can be anything such as a simple object,an array or an array of 
+objects which is represented as key value pairs enclosed within {}.
+
+Eg:	var student = {
+		        name:'xyz',email:'xyz@gmail.com',age:18
+		     }
+
+OBJECT PROPERTIES AND ITS CREATION
+
+	Each object has its own property,where property defines the cobject haracteristics of the object.In javascript both objects and its properties are case sensitive.
+Unassigned properties of an object are undefined.
+
+* To access the properties of an object dot notation is used as following
+
+   objectName.propertyName
+
+Eg:
+
+	 var myCar=new object();
+	myCar.make='Ford';
+	myCar.model='Fiesta';
+	myCar.year='2005';
+
+* Properties can also be accsessed or set using bracket[] notation.Objects are sometimes called associative arrays,since each property is associated with a string value.When
+property names are to be dynamically determined square bracket notation is used.When a property is not a proper javascript identifier such as a property name contains space,
+hyphen or that starts with a number, then bracket notation is used.
+
+Eg:
+
+	myObj['date created']='string with space';
+
+CREATING OBJECTS IN JAVASCRIPT:
+
+	Objects can be created in four ways
+
+* USING OBJECT LITERAL
+
+Eg:
+  
+	let bike={name:'super sport',make:'Ducati',engine:'973cc'}
+
+* USING CONSTRUCTOR
+
+	Constructor is a function and with the help of new keyword it allows to create multiple objects of same flavor.
+
+Eg:
+
+	function vehicle(name,make)
+	{
+	  this.name=name;
+	  this.make=make;
+	}
+	let car1=new vehicle('Fiesta','Ford')
+	let car2=new vehicle('i10','hyundai')
+	console.log(car1.name)  //output:Fiesta
+	console.log(car2.make)  //output:hyundai
+
+* USING NEW KEYWORD
+
+Eg:
+
+	var person=new object()
+	person.firstName='John'
+	person.lastName='doe'
+	person.age=21
+
+* USING OBJECT.CREATE METHOD
+
+	This method can be very useful because it allows us to choose the prototype object for the object that we want to create without using constructor function.
+
+Eg:
+	var Animal={
+		        type:'Invertebrates'
+		        displayType:function()
+                      		{
+                       		   console.log(this.type)
+                       		}
+                    	}
+	var animall=object.create(Animal)
+	animal.displayType()  //output:Invertebrates
+	var fish=object.create(Animal)
+	fish.type='fishes'
+	fish.dispalyType()  //	output:fishes
